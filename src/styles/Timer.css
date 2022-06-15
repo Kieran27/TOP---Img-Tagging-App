@@ -1,0 +1,11 @@
+.timer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--Primary-Red);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}

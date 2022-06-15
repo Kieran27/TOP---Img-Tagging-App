@@ -1,10 +1,13 @@
-import React from 'react'
-// import '../styles/Header.css'
+import { Link } from "react-router-dom"
+import '../styles/Header.css'
 
-const Header = () => {
+const Header = ({currentLevel}) => {
   return (
-    <header>
-      <h1>Where's Waldo</h1>
+    <header className="Header">
+      <Link to="/">
+        <h1>Where's Waldo</h1>
+      </Link>
+      <Link className='leaderboard-link' to="/leaderboard">LeaderBoard</Link>
 
     </header>
   )

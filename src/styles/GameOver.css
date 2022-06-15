@@ -1,0 +1,122 @@
+.modal-over-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.modal-over {
+  min-width: 550px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 10;
+  padding: 1.25rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  animation: fade-in 350ms;
+}
+
+.modal-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.modal-header span {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body span {
+  text-align: center;
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal-body form label {
+  font-size: .875rem;
+  margin-top: 1rem;
+  line-height: 1.25rem;
+  color: var(--Dark-Gray);
+}
+
+.modal-body input {
+  border: solid 1px grey;
+  border-radius: 7px;
+  padding: 1rem;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.form-footer {
+  margin-top: 1rem;
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+}
+
+.form-footer input {
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-self: flex-end;
+  background: var(--Primary-Red);
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.form-footer button {
+  margin-right: 0.75rem;
+  color: var(--Primary-Red);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .modal-over {
+    min-width: 450px;
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-over {
+    min-width: 350px;
+  }
+}

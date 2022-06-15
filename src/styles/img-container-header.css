@@ -1,0 +1,50 @@
+.img-container-header {
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.img-container-item {
+  max-width: 72px;
+  padding: 0 2rem 0 0;
+}
+
+.img-container-item img {
+  width: 100%;
+  height: 90%;
+}
+
+.img-filter {
+  filter: grayscale(100%);
+}
+
+.click-popup {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  color: white;
+  animation: pop-in 350ms;
+}
+
+.correct {
+  background: var(--Correct-Green);
+}
+
+.wrong {
+  background: var(--Error-Red);
+}
+
+@keyframes pop-in {
+  from {
+    top: 0%;
+  }
+
+  to {
+    top: 5%;
+  }
+
+}

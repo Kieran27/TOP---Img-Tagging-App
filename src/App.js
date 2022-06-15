@@ -107,7 +107,6 @@ const [currentPosition, setCurrentPosition] = useState(null)
 
   return (
     <Fragment>
-    <Header />
     <main>
     <div className="img-container">
       <img ref={imgRef}

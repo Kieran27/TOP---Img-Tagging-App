@@ -1,0 +1,124 @@
+
+.leaderboard-header button:hover {
+  background: white;
+}
+
+table {
+  min-width: 100%;
+  border-collapse: collapse;
+  text-indent: 0;
+}
+
+th {
+  text-align: left;
+}
+
+.leaderboard-level-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.leaderboard-level {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  max-width: 300px;
+}
+
+.leaderboard-level:hover {
+  background: var(--Primary-Red);
+  opacity: 0.8rem;
+}
+
+.leaderboard-level-active {
+  background: var(--Primary-Red);
+}
+
+.leaderboard-level button span {
+  display: flex;
+  margin: 0.5rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 1.2px;
+}
+
+.leaderboard-level img {
+  width: 100%;
+}
+
+.leaderboard-main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: 1rem 0 2rem 0; */
+  max-width: 1500px;
+  /* border: solid 1px black; */
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  /* border-bottom: solid 1px black; */
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+.leaderboard-entry {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border-bottom: solid 1px black;
+}
+
+.leaderboard-entry:last-child {
+  border-bottom: none;
+}
+
+.entry-left {
+}
+
+.entry-right {
+  margin-right: 2rem;
+}
+
+.entry-left-rank {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.home-btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.home-btn-container a {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 1.1px;
+  border-radius: 10px;
+  background: var(--Primary-Red);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: background 0.3s linear;
+}
+
+.home-btn-container a:hover {
+  background: none;
+  color: var(--Primary-Red);
+}

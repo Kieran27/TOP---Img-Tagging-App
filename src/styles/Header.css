@@ -1,7 +1,28 @@
-.Header {
+header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
+  align-items: center;
+  padding: 0 2rem;
   background: #fb7185;
+  color: var(--Font-Dark);
+}
+
+header h1 {
+  color: var(--Font-Dark);
+}
+
+.leaderboard-link {
+  color: var(--Font-Dark);
+  transition: 0.2s;
+}
+
+.leaderboard-link:hover {
+  color: black;
+  border-bottom: solid 1px black;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0 1rem;
+  }
 }
