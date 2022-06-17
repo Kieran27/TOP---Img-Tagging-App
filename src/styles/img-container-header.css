@@ -9,8 +9,13 @@
   padding: 0 2rem 0 0;
 }
 
+.img-container-item:last-child {
+  max-width: 72px;
+  padding: 0
+}
+
 .img-container-item img {
-  width: 100%;
+  width: 40px;
   height: 90%;
 }
 
@@ -47,4 +52,21 @@
     top: 5%;
   }
 
+}
+
+@keyframes mobile-pop-in {
+  from {
+    top: 105%
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .click-popup {
+    top: 100%;
+    animation: mobile-pop-in 350ms
+  }
 }

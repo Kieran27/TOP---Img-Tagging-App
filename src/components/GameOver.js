@@ -3,17 +3,11 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { doc, setDoc, addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase-config.js"
-import GameOverEndMsg from "./GameOverEndMsg.js"
 
 const GameOver = ({time, currentLevel}) => {
   let navigate = useNavigate()
   const [name, setName] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [endMsg, setEndMsg] = useState(false)
-
-  if (loading) {
-    console.log('Loading')
-  }
 
   const setResults = async (name, time) => {
     await addDoc(collection(db, `${currentLevel}LeaderBoard`), {
@@ -32,7 +26,6 @@ const GameOver = ({time, currentLevel}) => {
     e.preventDefault();
     setResults(name, time)
     setLoading(true)
-    setEndMsg(true)
   }
 
   const cancel = () => {
@@ -42,7 +35,6 @@ const GameOver = ({time, currentLevel}) => {
   return (
     <div className="modal-over-container">
       <div className="modal-over">
-      { endMsg && <GameOverEndMsg />}
         <div className="modal-header">
           Game Over!
           <br/>
@@ -61,7 +53,11 @@ const GameOver = ({time, currentLevel}) => {
              />
             <div className="form-footer">
               <button onClick={cancel}>No Thanks</button>
-              <input type="submit" value="Record Result"/>
+              <input
+                className={loading ? 'input-loading' : ""}
+                type="submit"
+                value={loading ? "Submitting" : "Record Result"}
+              />
             </div>
           </form>
         </div>

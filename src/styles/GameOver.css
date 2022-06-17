@@ -87,6 +87,10 @@
   color: white;
 }
 
+.input-loading {
+  opacity: 0.6;
+}
+
 .form-footer button {
   margin-right: 0.75rem;
   color: var(--Primary-Red);

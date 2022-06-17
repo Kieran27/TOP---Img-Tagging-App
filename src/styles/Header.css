@@ -5,6 +5,7 @@ header {
   padding: 0 2rem;
   background: #fb7185;
   color: var(--Font-Dark);
+  width: 100%;
 }
 
 header h1 {

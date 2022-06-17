@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react"
 import App from "./App.js"
 import GameWrapper from "./GameWrapper.js"
@@ -15,7 +15,7 @@ const LevelSelect = () => {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header currentLevel={currentLevel} />
       <main>
       <Routes>
@@ -24,7 +24,7 @@ const LevelSelect = () => {
         <Route path="/leaderboard" element={<LeaderBoard currentLevel={currentLevel} />} />
       </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
