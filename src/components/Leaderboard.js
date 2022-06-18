@@ -2,16 +2,14 @@ import "../styles/LeaderBoard.css"
 import lvlData from "../utility/levels.js"
 import { useState, useEffect } from "react"
 import { db } from '../firebase-config.js'
-import { collection, doc, getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom"
-import Loading from "./Loading.js"
 
 
 const LeaderBoard = ({currentLevel}) => {
   const [lvlLeaderboard, setLvlLeaderboard] = useState(null)
   const [lvlRef, setLevelRef] = useState(null)
   const [isActive, setIsActive] = useState(0)
-  const [isLoading, setLoading] = useState(true)
 
   const fetchLeaderBoardResults = async () => {
     if (!lvlRef) {

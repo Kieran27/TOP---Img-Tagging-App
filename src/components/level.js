@@ -3,7 +3,6 @@ import { db } from '../firebase-config.js'
 import { collection, doc, getDocs } from "firebase/firestore";
 import { useLocation } from 'react-router-dom'
 import PopUp from "./Popup-New.js"
-import WinnerModal from './Winner-Modal.js'
 import Loading from './Loading.js'
 import Timer from './Timer.js'
 import GameOver from './GameOver.js'

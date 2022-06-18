@@ -1,12 +1,6 @@
-import React from 'react'
-import { useState, useEffect, Fragment } from "react"
 import { Link } from "react-router-dom"
 import gameData from "./utility/levels.js"
-import cardImage from "./assets/Waldo-Images/2687212.jpg"
 import './styles/GameWrapper.css'
-
-
-import App from "./App.js"
 
 const GameWrapper = () => {
   return (

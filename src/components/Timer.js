@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { formatSeconds  } from "../utility/formatSeconds.js"
 import "../styles/Timer.css"
 

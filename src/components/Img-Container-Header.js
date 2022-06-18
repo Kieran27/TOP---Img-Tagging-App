@@ -1,7 +1,7 @@
 import WaldoImage from '../assets/char_images_better/Waldo.jpg'
 import OswaldImage from '../assets/char_images_better/Oswald.jpg'
 import WizardImage from '../assets/char_images_better/Wizard.jpg'
-import "../styles/img-container-header.css"
+import "../styles/Img-Container-Header.css"
 
 const imgArr = [OswaldImage, WaldoImage, WizardImage]
 

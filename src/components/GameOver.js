@@ -1,7 +1,7 @@
 import "../styles/GameOver.css"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
-import { doc, setDoc, addDoc, collection } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase-config.js"
 
 const GameOver = ({time, currentLevel}) => {

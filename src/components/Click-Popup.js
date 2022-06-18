@@ -1,4 +1,4 @@
-import "../styles/img-container-header.css"
+import "../styles/Img-Container-Header.css"
 
 const ClickPopUp = ({status, char}) => {
   return (
