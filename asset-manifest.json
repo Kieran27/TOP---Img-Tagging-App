@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/TOP---Img-Tagging-App/static/css/main.6e21bc41.css",
-    "main.js": "/TOP---Img-Tagging-App/static/js/main.f9104e13.js",
+    "main.css": "/TOP---Img-Tagging-App/static/css/main.545af718.css",
+    "main.js": "/TOP---Img-Tagging-App/static/js/main.a5125f28.js",
     "static/media/space.jpg": "/TOP---Img-Tagging-App/static/media/space.ecd7e7bdff1473a90c59.jpg",
     "static/media/chapooki.jpg": "/TOP---Img-Tagging-App/static/media/chapooki.e0f46b1a2d2cb9ba24d8.jpg",
     "static/media/kong.jpg": "/TOP---Img-Tagging-App/static/media/kong.beff004ec6a0dc5757eb.jpg",
     "static/media/beach.jpg": "/TOP---Img-Tagging-App/static/media/beach.a0e0289ef358bd1a3745.jpg",
-    "static/media/2687212.jpg": "/TOP---Img-Tagging-App/static/media/2687212.e466d7ffe604d791eff2.jpg",
     "index.html": "/TOP---Img-Tagging-App/index.html",
-    "main.6e21bc41.css.map": "/TOP---Img-Tagging-App/static/css/main.6e21bc41.css.map",
-    "main.f9104e13.js.map": "/TOP---Img-Tagging-App/static/js/main.f9104e13.js.map"
+    "main.545af718.css.map": "/TOP---Img-Tagging-App/static/css/main.545af718.css.map",
+    "main.a5125f28.js.map": "/TOP---Img-Tagging-App/static/js/main.a5125f28.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e21bc41.css",
-    "static/js/main.f9104e13.js"
+    "static/css/main.545af718.css",
+    "static/js/main.a5125f28.js"
   ]
 }
