@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Where's Waldo
+This is an image tagging app based off the popular children's books, Where's Waldo.
+It was built using react, react router and stores important data such as user times through firebase.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Live site
+https://kieran27.github.io/TOP---Img-Tagging-App/
+##### Repo
+https://github.com/Kieran27/TOP---Img-Tagging-App
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+### What I Learned
 
-### `npm start`
+This project was another big step in my frontend knowledge. Understanding how to use a service such as firebase and utilise it for this project was extremely beneficial and I can see it being my go to backend service until I begin to delve into creating my own backend. Aside from that, this project helped further cement my knowledge of react and using react router appropriately. Using asynchronous code through fetching data from firebase also allowed me to add loading states to the levels in the project. Which was always something I had wanted to do. This project also had a larger amount of components to deal with than I was used to so structuring certain components to conditionally render the correct one based on state proved slightly unwieldy at times but was a great learning experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### What I would do differently
+While appropriate for this project, building out the app made me see the downsides of using lots of setState hooks. I sometimes forgot what each piece of state did and made things such as naming harder than they needed to be. I would definitely like to delve into better state management in future projects. I've already begun looking into more advanced hooks such as useReducer and use/provideContext so I hope to include these in my next complex project.
